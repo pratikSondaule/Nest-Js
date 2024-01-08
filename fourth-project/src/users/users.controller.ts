@@ -1,4 +1,4 @@
-import { Body, Controller, Delete, Get, HttpCode, Param, Post, Put, Request, SetMetadata, UseGuards } from "@nestjs/common";
+import { Body, Controller, Get, HttpCode, Param, Post, Put, Request, SetMetadata, UseGuards } from "@nestjs/common";
 import { UsersService } from "./users.service";
 import { AuthGuard } from "./guards/auth.guard";
 import { RoleGuard } from "./guards/role.guard";

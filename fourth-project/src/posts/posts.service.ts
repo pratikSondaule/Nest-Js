@@ -15,6 +15,10 @@ export class PostsService {
             }
         })
 
+        if (addPost.title === "") {
+            return { msg: "Title is required" }
+        }
+
         return { msg: "Post created successfully", post }
     }
 
@@ -37,6 +41,10 @@ export class PostsService {
                 updatedAt: new Date()
             }
         })
+
+        if (post.title = "") {
+            return { msg: "Title is required" }
+        }
         if (!postToUpdate) {
             return { msg: 'Post not found' }
         }
